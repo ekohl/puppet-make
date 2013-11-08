@@ -3,4 +3,5 @@ pkg
 spec/fixtures
 .rspec_system
 
-Gemfile.lock
+/Gemfile.lock
+
