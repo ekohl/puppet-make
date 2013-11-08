@@ -12,8 +12,6 @@ describe 'make' do
         it { should include_class('make::params') }
 
         it { should contain_class('make::install') }
-        it { should contain_class('make::config') }
-        it { should contain_class('make::service') }
       end
     end
   end
@@ -26,6 +24,16 @@ describe 'make' do
       }}
 
       it { expect { should }.to raise_error(Puppet::Error, /Nexenta not supported/) }
+    end
+  end
+
+  context 'Redhat' do
+    describe 'installs the make package' do
+      let (:facts) {{
+        :osfamily => 'RedHat'
+      }}
+
+      it { should contain_package('make') }
     end
   end
 end
