@@ -6,5 +6,3 @@ license       'Apache License, Version 2.0'
 summary       'Installs the make package'
 description   'Installs the make package'
 project_page  'https://github.com/Element84/puppet-make'
-
-dependency 'puppetlabs/stdlib'
