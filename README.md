@@ -13,7 +13,17 @@ Installs the make package.
 
 ##Usage
 
-include make
+```puppet
+  include make
+```
+
+To override the package name,
+
+```puppet
+  class { 'make':
+    package_name => 'gmake',
+  }
+```
 
 ##Limitations
 
