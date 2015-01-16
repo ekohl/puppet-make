@@ -1,8 +1,0 @@
-name          'croddy-make'
-version       '0.0.3'
-source        'https://github.com/cmroddy/puppet-make.git'
-author        'Marc Huffnagle <marc@element84.com>'
-license       'Apache License, Version 2.0'
-summary       'Installs the make package'
-description   'Installs the make package'
-project_page  'https://github.com/cmroddy/puppet-make'
