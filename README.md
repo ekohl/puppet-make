@@ -21,4 +21,4 @@ Tested with Ubuntu and CentOS.
 
 ##Development
 
-To contribute, clone the source from https://github.com/Element84/puppet-make.git and follow the pull request process outlined at http://www.element84.com/github-pull-requests-made-easy.html
+To contribute, fork https://github.com/cmroddy/puppet-make.git, make a branch for your changes, and file a pull request.
