@@ -9,7 +9,7 @@ describe 'make' do
           :osfamily => osfamily,
         }}
 
-        it { should include_class('make::params') }
+        it { should contain_class('make::params') }
 
         it { should contain_class('make::install') }
       end
