@@ -1,4 +1,4 @@
-2015-01-16
+2015-01-16 Release 0.0.5
 - Fix a couple of deprecated rspec-puppet test cases
 - Disable rspec-system and blacksmith
 - Change metadata author as requested
