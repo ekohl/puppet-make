@@ -11,6 +11,7 @@ describe 'make' do
         it { should contain_class('make')}
 
         it { should contain_package('make').with_ensure('present') }
+      end
     end
   end
 
