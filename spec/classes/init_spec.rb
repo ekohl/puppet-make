@@ -1,40 +1,31 @@
 require 'spec_helper'
 
 describe 'make' do
-  context 'supported operating systems' do
+  describe 'on supported platforms' do
     ['Debian', 'RedHat'].each do |osfamily|
-      describe "make class without any parameters on #{osfamily}" do
+      context "make class without any parameters on #{osfamily}" do
         let(:params) {{ }}
-        let(:facts) {{
-          :osfamily => osfamily,
-        }}
+        let(:facts) {{ :osfamily => osfamily }}
 
-        it { should contain_class('make::params') }
+        it { should compile.with_all_deps }
+        it { should contain_class('make')}
 
-        it { should contain_class('make::install') }
-      end
+        it { should contain_package('make').with_ensure('present') }
     end
   end
 
-  context '"unsupported" operating system' do
-    describe 'make class with overriding package_name parameter on FreeBSD' do
+  describe 'on "unsupported" operating system' do
+    context 'make class with overriding package_name parameter on FreeBSD' do
       let(:params) {{ :package_name => 'gmake' }}
       let(:facts) {{
         :osfamily        => 'FreeBSD',
         :operatingsystem => 'FreeBSD',
       }}
 
-      it { should contain_package('gmake') }
-    end
-  end
+      it { should compile.with_all_deps }
+      it { should contain_class('make')}
 
-  context 'Redhat' do
-    describe 'installs the make package' do
-      let (:facts) {{
-        :osfamily => 'RedHat'
-      }}
-
-      it { should contain_package('make') }
+      it { should contain_package('gmake').with_ensure('present') }
     end
   end
 end
