@@ -3,10 +3,13 @@
 # Install the make package
 #
 class make (
-) inherits make::params {
+  $package_name   = 'make',
+  $package_ensure = 'present'
+) {
 
-  # validate parameters here
+  # "package" will validate $package_ensure for us..
 
-  class { 'make::install': } ->
-  Class['make']
+  package { $package_name:
+    ensure => $package_ensure,
+  }
 }
