@@ -1,3 +1,9 @@
+2016-11-17 Release 1.0.0
+- simplify module: add parameters, remove params (igalic)
+- remove dead code (ghoneycutt)
+- simplify spec tests (ghoneycutt)
+- move tests/ to examples (ghoneycutt)
+
 2015-01-16 Release 0.0.5
 - Fix a couple of deprecated rspec-puppet test cases
 - Disable rspec-system and blacksmith
