@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'make' do
   describe 'on supported platforms' do
-    ['Debian', 'RedHat'].each do |osfamily|
+    %w(Debian RedHat).each do |osfamily|
       context "make class without any parameters on #{osfamily}" do
         let(:params) {{ }}
         let(:facts) {{ osfamily: osfamily }}
