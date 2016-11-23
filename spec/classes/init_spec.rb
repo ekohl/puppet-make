@@ -4,7 +4,7 @@ describe 'make' do
   describe 'on supported platforms' do
     %w(Debian RedHat).each do |osfamily|
       context "make class without any parameters on #{osfamily}" do
-        let(:params) { { } }
+        let(:params) { {} }
         let(:facts) { { osfamily: osfamily } }
 
         it { is_expected.to compile.with_all_deps }
