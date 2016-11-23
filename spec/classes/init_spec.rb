@@ -5,7 +5,7 @@ describe 'make' do
     ['Debian', 'RedHat'].each do |osfamily|
       context "make class without any parameters on #{osfamily}" do
         let(:params) {{ }}
-        let(:facts) {{ :osfamily => osfamily }}
+        let(:facts) {{ osfamily: osfamily }}
 
         it { is_expected.to compile.with_all_deps }
         it { is_expected.to contain_class('make')}
@@ -17,10 +17,10 @@ describe 'make' do
 
   describe 'on "unsupported" operating system' do
     context 'make class with overriding package_name parameter on FreeBSD' do
-      let(:params) {{ :package_name => 'gmake' }}
+      let(:params) {{ package_name: 'gmake' }}
       let(:facts) {{
-        :osfamily        => 'FreeBSD',
-        :operatingsystem => 'FreeBSD',
+        osfamily: 'FreeBSD',
+        operatingsystem: 'FreeBSD',
       }}
 
       it { is_expected.to compile.with_all_deps }
