@@ -7,10 +7,10 @@ describe 'make' do
         let(:params) {{ }}
         let(:facts) {{ :osfamily => osfamily }}
 
-        it { should compile.with_all_deps }
-        it { should contain_class('make')}
+        it { is_expected.to compile.with_all_deps }
+        it { is_expected.to contain_class('make')}
 
-        it { should contain_package('make').with_ensure('present') }
+        it { is_expected.to contain_package('make').with_ensure('present') }
       end
     end
   end
@@ -23,10 +23,10 @@ describe 'make' do
         :operatingsystem => 'FreeBSD',
       }}
 
-      it { should compile.with_all_deps }
-      it { should contain_class('make')}
+      it { is_expected.to compile.with_all_deps }
+      it { is_expected.to contain_class('make')}
 
-      it { should contain_package('gmake').with_ensure('present') }
+      it { is_expected.to contain_package('gmake').with_ensure('present') }
     end
   end
 end
