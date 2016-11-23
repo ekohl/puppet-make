@@ -20,7 +20,7 @@ describe 'make' do
       let(:params) { { package_name: 'gmake' } }
       let(:facts) { {
         osfamily: 'FreeBSD',
-        operatingsystem: 'FreeBSD',
+        operatingsystem: 'FreeBSD'
       }}
 
       it { is_expected.to compile.with_all_deps }
