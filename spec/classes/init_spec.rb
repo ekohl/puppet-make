@@ -18,10 +18,12 @@ describe 'make' do
   describe 'on "unsupported" operating system' do
     context 'make class with overriding package_name parameter on FreeBSD' do
       let(:params) { { package_name: 'gmake' } }
-      let(:facts) { {
-        osfamily: 'FreeBSD',
-        operatingsystem: 'FreeBSD'
-      }}
+      let(:facts) do
+        {
+          osfamily: 'FreeBSD',
+          operatingsystem: 'FreeBSD'
+        }
+      end
 
       it { is_expected.to compile.with_all_deps }
       it { is_expected.to contain_class('make') }
