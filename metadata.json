@@ -1,13 +1,13 @@
 {
-  "name": "croddy-make",
-  "version": "1.0.0",
-  "author": "croddy",
+  "name": "puppet-make",
+  "version": "1.0.1",
+  "author": "Vox Pupuli",
   "summary": "Manage make",
   "description": "Manage make",
   "license": "Apache-2.0",
-  "source": "git://github.com/croddy/puppet-module-make.git",
-  "project_page": "https://github.com/croddy/puppet-module-make",
-  "issues_url": "https://github.com/croddy/puppet-module-make/issues",
+  "source": "git://github.com/voxpupuli/puppet-make.git",
+  "project_page": "https://github.com/voxpupuli/puppet-make",
+  "issues_url": "https://github.com/voxpupuli/puppet-make/issues",
   "requirements": [
     {"name":"puppet","version_requirement":">= 3.0.0 < 5.0.0"}
   ],

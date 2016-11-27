@@ -1,12 +1,13 @@
 require 'spec_helper'
 
-describe 'make' do
-  describe 'on supported platforms' do
-    %w(Debian RedHat).each do |osfamily|
-      context "make class without any parameters on #{osfamily}" do
-        let(:params) { {} }
-        let(:facts) { { osfamily: osfamily } }
+describe 'make', type: :class do
+  on_supported_os.each do |os, facts|
+    context "on #{os} " do
+      let :facts do
+        facts
+      end
 
+      context 'make class without any parameters' do
         it { is_expected.to compile.with_all_deps }
         it { is_expected.to contain_class('make') }
 
@@ -16,9 +17,13 @@ describe 'make' do
   end
 
   describe 'on "unsupported" operating system' do
-    context 'make class with overriding package_name parameter on FreeBSD' do
-      let(:params) { { package_name: 'gmake' } }
-      let(:facts) do
+    context 'overriding package_name parameter on FreeBSD' do
+      let :params do
+        {
+          package_name: 'gmake'
+        }
+      end
+      let :facts do
         {
           osfamily: 'FreeBSD',
           operatingsystem: 'FreeBSD'
