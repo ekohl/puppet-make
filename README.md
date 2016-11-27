@@ -1,5 +1,12 @@
 #make
 
+[![Puppet Forge](http://img.shields.io/puppetforge/v/puppet/make.svg)](https://forge.puppetlabs.com/puppet/make)
+[![Build Status](https://travis-ci.org/voxpupuli/puppet-make.png?branch=master)](https://travis-ci.org/voxpupuli/puppet-make)
+[![Github Tag](https://img.shields.io/github/tag/voxpupuli/puppet-make.svg)](https://github.com/voxpupuli/puppet-make)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/voxpupuli/puppet-make?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Puppet Forge Downloads](http://img.shields.io/puppetforge/dt/puppet/make.svg)](https://forge.puppetlabs.com/puppet/make)
+[![Puppet Forge Endorsement](https://img.shields.io/puppetforge/e/puppet/make.svg)](https://forge.puppetlabs.com/puppet/make)
+
 ####Table of Contents
 
 1. [Overview](#overview)
@@ -59,9 +66,9 @@ in .travis.yml on the following platforms.
 ##Development
 
 To contribute, fork
-[https://github.com/croddy/puppet-make.git](https://github.com/croddy/puppet-make.git),
+[https://github.com/voxpupuli/puppet-make.git](https://github.com/voxpupuli/puppet-make.git),
 make a branch for your changes, and file a pull request.
 
 ##Contributors
 
-Thank you to all of our [https://github.com/croddy/puppet-make/graphs/contributors](contributors).
+Thank you to all of our [https://github.com/voxpupuli/puppet-make/graphs/contributors](contributors).
