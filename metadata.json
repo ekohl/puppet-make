@@ -1,6 +1,6 @@
 {
   "name": "puppet-make",
-  "version": "1.0.1",
+  "version": "1.0.2-rc0",
   "author": "Vox Pupuli",
   "summary": "Manage make",
   "description": "Manage make",
@@ -9,9 +9,14 @@
   "project_page": "https://github.com/voxpupuli/puppet-make",
   "issues_url": "https://github.com/voxpupuli/puppet-make/issues",
   "requirements": [
-    {"name":"puppet","version_requirement":">= 3.0.0 < 5.0.0"}
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
   ],
-  "dependencies": [],
+  "dependencies": [
+
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
