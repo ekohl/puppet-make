@@ -71,4 +71,4 @@ make a branch for your changes, and file a pull request.
 
 ##Contributors
 
-Thank you to all of our [https://github.com/voxpupuli/puppet-make/graphs/contributors](contributors).
+Thank you to all of our [https://github.com/voxpupuli/puppet-make/graphs/contributors](https://github.com/voxpupuli/puppet-make/graphs/contributors).
