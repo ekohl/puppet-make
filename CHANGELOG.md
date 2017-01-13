@@ -1,3 +1,10 @@
+# Changelog
+
+## 2017-01-13 - Release 1.1.0
+
+This is the last release with Puppet 3 support!
+* Bump minimum version_requirement for Puppet
+
 ## 2016-11-27 Release 1.0.1
 * Initial modulesync with voxpupuli (#4)
 
