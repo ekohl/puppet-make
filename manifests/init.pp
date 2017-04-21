@@ -9,7 +9,6 @@ class make (
 
   # "package" will validate $package_ensure for us..
 
-  package { $package_name:
-    ensure => $package_ensure,
-  }
+  ensure_packages($package_name, {'ensure' => $package_ensure})
+
 }
